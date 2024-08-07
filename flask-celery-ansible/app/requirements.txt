@@ -1,0 +1,4 @@
+celery==5.4.0
+Flask==3.0.3
+PyYAML==6.0.1
+PyYAML==6.0.1

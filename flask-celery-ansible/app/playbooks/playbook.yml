@@ -1,0 +1,113 @@
+---
+- name: Test Ansible Playbook on localhost with sleep delays
+  hosts: localhost
+  become: false
+  tasks:
+    - name: Create a test directory
+      file:
+        path: /tmp/test_directory
+        state: directory
+
+    - name: Create another directory
+      file:
+        path: /tmp/another_test_directory
+        state: directory
+
+    - name: Echo text to /dev/null
+      shell: echo "This is a test" > /dev/null
+
+    - name: Create a test file
+      copy:
+        content: "This is a test file"
+        dest: /tmp/test_directory/test_file.txt
+
+    - name: Remove test directories
+      file:
+        path: /tmp/test_directory
+        state: absent
+
+    - name: Remove another test directory
+      file:
+        path: /tmp/another_test_directory
+        state: absent
+    - name: Create a test directory
+      file:
+        path: /tmp/test_directory
+        state: directory
+
+    - name: Create another directory
+      file:
+        path: /tmp/another_test_directory
+        state: directory
+
+    - name: Echo text to /dev/null
+      shell: echo "This is a test" > /dev/null
+
+    - name: Create a test file
+      copy:
+        content: "This is a test file"
+        dest: /tmp/test_directory/test_file.txt
+
+    - name: Remove test directories
+      file:
+        path: /tmp/test_directory
+        state: absent
+
+    - name: Remove another test directory
+      file:
+        path: /tmp/another_test_directory
+        state: absent
+    - name: Create a test directory
+      file:
+        path: /tmp/test_directory
+        state: directory
+
+    - name: Create another directory
+      file:
+        path: /tmp/another_test_directory
+        state: directory
+
+    - name: Echo text to /dev/null
+      shell: echo "This is a test" > /dev/null
+
+    - name: Create a test file
+      copy:
+        content: "This is a test file"
+        dest: /tmp/test_directory/test_file.txt
+
+    - name: Remove test directories
+      file:
+        path: /tmp/test_directory
+        state: absent
+
+    - name: Remove another test directory
+      file:
+        path: /tmp/another_test_directory
+        state: absent
+    - name: Create a test directory
+      file:
+        path: /tmp/test_directory
+        state: directory
+
+    - name: Create another directory
+      file:
+        path: /tmp/another_test_directory
+        state: directory
+
+    - name: Echo text to /dev/null
+      shell: echo "This is a test" > /dev/null
+
+    - name: Create a test file
+      copy:
+        content: "This is a test file"
+        dest: /tmp/test_directory/test_file.txt
+
+    - name: Remove test directories
+      file:
+        path: /tmp/test_directory
+        state: absent
+
+    - name: Remove another test directory
+      file:
+        path: /tmp/another_test_directory
+        state: absent
